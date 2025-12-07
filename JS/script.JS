@@ -108,12 +108,13 @@ dom.style.backgroundImage = '-moz-linear-gradient('
 function PAHHHH()
 {
     if(aprovado == true){
-        window.location.href = "http://127.0.0.1:5500/HTML/html2.html";
+        window.location.href = "https://igorlubaskorkiewicz.github.io/Site-Api/HTML/html2.html";
     }
 }
 
 function PAHHH()
-{ window.location.href = "http://127.0.0.1:5500/HTML/html.html" 
+{
+    window.location.href = "https://igorlubaskorkiewicz.github.io/Site-Api/HTML/html.html" 
 
 }
 
@@ -153,7 +154,7 @@ function storeName() {
     
 }
 
-if (window.location.href == "http://127.0.0.1:5500/HTML/html2.html")
+if (window.location.href == "https://igorlubaskorkiewicz.github.io/Site-Api/HTML/html2.html")
     {
         setInterval(() => {
             getPalette()        
