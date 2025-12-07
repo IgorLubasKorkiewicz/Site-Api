@@ -43,17 +43,6 @@ fetch(url, {
 
 
 
-    
-var url2 = 'https://coffee.alexflipnote.dev/';
-fetch(url2)
-    .then(response => response.json())
-    .then(json => {
-        const coffeeImage = json.file;
-        console.log("Coffee Image URL:", coffeeImage);
-    })
-    .catch(err => {
-        console.error("Error:", err);
-    });
 
 
 calcularIdade = () => {
@@ -166,3 +155,4 @@ if (window.location.href == "https://igorlubaskorkiewicz.github.io/Site-Api/HTML
 
 //rgb(5, 52, 162);
 //rgb(250, 203, 93);
+
