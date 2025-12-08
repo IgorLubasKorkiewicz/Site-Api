@@ -40,7 +40,7 @@ header.special
     color: white;
 
 }
-header a a:visited
+header a, a:visited
 {
     color:red;
     !important
@@ -102,6 +102,7 @@ footer
     position: sticky;
         bottom: 0;
 }
+
 
 
 
