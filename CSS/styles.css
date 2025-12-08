@@ -38,6 +38,12 @@ header.special
     background-color: black;
     border-radius: 10px;
     color: white;
+
+}
+header.special a
+{
+    color:red
+    
 }
 
 nav 
