@@ -15,31 +15,32 @@ http.onreadystatechange = function () {
         catchPalette = palette;
         console.log("Palette:", palette);
     }
+
+    http.open("POST", url, true);
+    http.send(JSON.stringify(data));
+    fetch(url, {
+        method: "POST",
+        body: JSON.stringify(data)
+    })
+        .then(response => response.json())
+        .then(json => {
+            const palette = json.result;
+            catchPalette = palette;
+            console.log("Palette:", palette);
+
+        })
+        .catch(err => {
+            console.error("Error:", err);
+        });
+
 };
 
 
 
-http.open("POST", url, true);
-http.send(JSON.stringify(data));
-fetch(url, {
-    method: "POST",
-    body: JSON.stringify(data)
-})
-    .then(response => response.json())
-    .then(json => {
-        const palette = json.result;
-        catchPalette = palette;
-        console.log("Palette:", palette);
-
-    })
-    .catch(err => {
-        console.error("Error:", err);
-    });
 
     
 
 // Example: get a random coffee fact
-
 
 
 
@@ -105,7 +106,9 @@ function PAHHHH()
 
 function PAHHH()
 {
-    window.location.href = "https://igorlubaskorkiewicz.github.io/Site-Api/HTML/html.html" 
+    // window.location.href = "https://igorlubaskorkiewicz.github.io/Site-Api/HTML/html.html"
+    window.location.href = "https://igorlubaskorkiewicz.github.io/Site-Api/HTML/html.html"
+    // window.location.href =  "html.html"
 
 }
 
@@ -155,4 +158,3 @@ if (window.location.href == "https://igorlubaskorkiewicz.github.io/Site-Api/HTML
 
 //rgb(5, 52, 162);
 //rgb(250, 203, 93);
-
