@@ -1,56 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="stylesheet" href="../CSS/styles.css">
 </head>
-<body id="body2">
-    <header class="gridArea1 special" id="headerf">
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <h1>bem vindo</h1>
-        </nav>
-    </header>
 
-    <main>
-    <section>
-        <h1>Eu sou, HTML 2</h1>
-        esse é o campo de input da pagina 2
-        ele é para estimar sua idade
-        
-        <form action="calculaidadeh">
-            <label for="calculaidadeh">Esse campo vai transformar seu primeiro nome em estimativa de idade.</label>
-        <input type="text" id="ageInput" placeholder="ME DIGAH TEU NOME" name="calculaidadeh">
-        </form>
-        <button onclick="storeName()">Store Name</button>
-        <br><br>
-        <div id="resposta">
-            
-            
+<body id="body">
+    <div>
+        <header class="gridArea1">
+            <nav>
+                <ul>
+                    <li><a href="#corzinha">Quer cor?</a></li>
+                    <li><a href="#café">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#footer">Contact</a></li>
+                </ul>
+                <h1>bem vindo</h1>
+            </nav>
 
-        </div>
-        
 
-    </section>
-    </main>
-    <footer id ='footer'>
-        Volte de onde veio...
-        <button onclick="PAHHH()">Eu me arrependi de trocar de pagina me desculpe pfv</button>
-    </footer>
 
-    
 
-    <script>
-     
-    </script>
-        <script src="/JS/script.JS"></script>
-
+        </header>
+        <main class="gridArea2">
+            <section id ='corzinha'>
+                                <h1>Está na hora</h1>
+                                <p>De pegar.</p>
+                                <p>A api</p>
+                                <p>de cores</p>
+                                <p>mais</p>
+                                <p>incrível</p>
+                                <p>do</p>
+                                <p>mundo</p><br><br>
+                <button onclick="getPalette()">curioso? clica aqui!</button>
+            </section>
+            <section id ='café'>
+                <h1>Está na hora</h1>
+                <p>De pegar.</p>
+                <p>A api</p>
+                <p>de Nutrição</p>
+                <p>mais</p>
+                <p>incrível</p>
+                <p>do</p>
+                <p>mundo!</p>
+            </section>
+            <section>
+                <p>Me diga sua data de nascimento para continuar.</p>
+                <form for ='ae'>
+                <label for="ae">Esse botão calcula sua idade.</label>
+                <input type="date" name="ae" id="dataNasc">
+                <button onclick="calcularIdade()">Calcular Idade</button>
+                </form>
+            </section>
+        </main>
+        <footer id="footer">
+            Veja mais em uma pagina... NOVA! !!!!
+            <button onclick="PAHHHH()">Eu tenho outra pagina</button>
+        </footer>
+    </div>
+    <script src="../JS/script.JS" defer></script>
 </body>
+
 </html>
